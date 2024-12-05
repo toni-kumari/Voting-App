@@ -22,3 +22,17 @@ __________________________________________________________________________
 Routes
 
 User Authentication
+    /signup: POST-Create a new user account.
+    /login: POST-Log in to an existing account. {aadhar card number + password }
+Voting:
+     /candidates: GET-Get the list of candidates.
+     /vote/:candidateId: POST-Vote for a specific candidate.
+Vote Counts:
+       /vote/counts: GET--Get the list of candidates sorted by their vote counts.
+User Profile:
+       /profile: GET--Get the user's profile information.
+       /profile/password: PUT--Change the user's password.
+Admin Candidate Management:
+       /candidates: POST --Create a new candidate.
+       /candidates/:candidateId: PUT--Update an existing candidate.
+       /candidates/:candidateId: DELETE--Delete a candidate from the list.
